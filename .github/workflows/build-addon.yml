@@ -1,0 +1,34 @@
+name: Package addon
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+      - '!**-classic'
+      - '!**-rc**'
+      - "!**-alpha**"
+      - "!**-beta**"
+    paths-ignore:
+      - '.github/**'
+      - '**/README.md'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout addon
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Tree files 1
+      run: tree -pufiag -I '.git|.github'
+
+    - name: Package
+      uses: BigWigsMods/packager@v2
+      env:
+        GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,8 @@
+## Interface: 90005
+## Title: Masque: waFlatSquares
+## Version: 0.1.2
+## Author: podboq2872
+## Notes: waFlatSquares skin for Masque.
+## Dependencies: Masque
+
+waFlatSquares.lua
