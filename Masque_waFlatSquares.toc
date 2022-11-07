@@ -1,6 +1,6 @@
 ## Interface: 100000
 ## Title: Masque: waFlatSquares
-## Version: 0.2.0
+## Version: 0.2.1
 ## Author: RiightX
 ## Notes: waFlatSquares skin for Masque.
 ## Dependencies: Masque

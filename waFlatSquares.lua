@@ -2,9 +2,9 @@ local MSQ = LibStub("Masque", true)
 if not MSQ then return end
 
 MSQ:AddSkin("waFlatSquares", {
-	Author = "podboq2872",
-	Description = "A skin from good ol podboq to give my Dominos the skin I want",
-	Version = "0.1.2",
+	Author = "RiightX",
+	Description = "A skin from good ol RiightX to give some WeakAuras the skin I want",
+	Version = "0.2.1",
 	Shape = "Square",
 	Masque_Version = 90002,
 	Backdrop = {
